@@ -10,9 +10,8 @@
 
             $url = explode("/", filter_input(INPUT_GET, "url"));
 
-            print_r($url);
-
-            echo "<br/><br/>";
+//            print_r($url); // for debugging
+//            echo "<br/><br/>";
 
             //require 'Controllers/' . $url . '.php';
             $controller = new $url[0];

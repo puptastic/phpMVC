@@ -1,8 +1,9 @@
 <?php
-    class Indexy {
+    class Indexy extends Controller {
         var $callNumber;
         
         public function __construct() {
+            parent::__construct();
             $this->callNumber = 12;
             
             echo "<br/><br/>You are in indexy!";

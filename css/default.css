@@ -1,0 +1,20 @@
+/* 
+    Created on : Nov 21, 2017, 9:05:47 PM
+    Author     : Flores
+*/
+p {
+    font-size: large;
+}
+
+h1 {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    background-color: gray;
+}
+
+form {
+    background-color: lightgray
+}
