@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create IT Ticket</title>
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <!--*****Code below references the jquery library, including ajax calls*****-->
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!--*****************************************************************-->
+        <script src="TicketEntry.js"></script>
+    </head>
+    <body>
+        <form name="frmMain" id="frmMain" action="TicketEntry.php" method="post">
+            <h1>Please fill out the information below.</h1>
+            *Your unit:
+            <select id="cmbUnits" name='cmbUnits' style="width: 300px;">
+                <option value="-1">...?...</option>
+            </select><br><br>
+
+            *You:
+            <select id="cmbRequesters" name='cmbRequesters' style="width: 300px;">
+                <option value="-1">You are?...</option>
+            </select><br><br>
+
+            *Category:
+            <select id="cmbCategories" name='cmbCategories' style="width: 300px;">
+                <option value="-1">...?...</option>
+            </select><br><br>
+
+            *Issue Summary:
+            <input type="text" id="txtSubject" name="txtSubject" required><br><br>
+
+            Details:<br>
+            <!--<input type="text" id="txtDetails" name="txtDetails">-->
+            <textarea id="txtDetails" name="txtDetails" cols="40" rows="5"></textarea><br><br>
+            <input type='Submit' name='btnSubmit' value='Submit'>
+        </form>
+    </body>
+</html>

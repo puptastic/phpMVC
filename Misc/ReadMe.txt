@@ -1,0 +1,1 @@
+Just a rough example of my previous work from the month of July 2017 or there-abouts.  Code has been removed to prevent any security issues.
