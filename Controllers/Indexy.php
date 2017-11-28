@@ -1,4 +1,5 @@
 <?php
+
     class Indexy extends Controller {
         var $callNumber;
         
@@ -6,11 +7,21 @@
             parent::__construct();
             $this->callNumber = 12;
             
-            echo "<br/><br/>You are in indexy!";
-            echo "<br/>" . $this->callNumber;
+            echo "<br/>***Indexy Constructor***<br/>";
+            //echo "<br/>" . $this->callNumber . "<br/>";
         }
         
-        public function Dance() {
-            print_r("<br/>Dancing!!");
+        public function DisplayCustomers() {
+            echo "<br/>***DiplayCustomers Function***<br/>";
+            
+            $customers = customer::GetAll();
+            
+            var_dump($customers); // DEBUGGING ONLY
+            
+//            foreach($customers as $cust) {
+//                var_dump($cust);
+//                echo "<br/><br/>";
+//                echo $cust->firstName . ' ' . $cust->lastName;
+//            }
         }
     }

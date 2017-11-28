@@ -14,17 +14,27 @@
         <form id="frmMain" name="frmMain">
             <h1>Heading Size 1</h1>
             <p>Basic paragraph... Everything below the horizontal rule is dynamically generated based on the url.</p>
-            <a href="http://localhost:8000/?url=Indexy/Dance">Indexy</a> 
+            <a href="http://localhost:8000/?url=Indexy/DisplayCustomers">Indexy</a> 
             OR 
-            <a href="http://localhost:8000?url=Help/Aid">Help</a>
+            <a href="http://localhost:8000?url=Help/HelpInfo">Help</a>
         </form>
         <?php
             require_once('Libs/Controller.php');
             require_once('Controllers/Indexy.php');
             require_once('Controllers/Help.php');
             require_once('Libs/Bootstrap.php');
+            require_once('Libs/Database.php');
+            require_once('Models/customer.php');
+            require_once('Models/helpinfo.php');
+            //use PDO;
 
-            $app = new Bootstrap();
+            try {
+                $app = new Bootstrap(); // LIVE!!!
+            }
+            catch (Exception $ex) {
+                echo "Exception: " . $ex->getMessage();
+            }
+            
         ?>  
     </body>
 </html>
